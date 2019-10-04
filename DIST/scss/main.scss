@@ -1,0 +1,87 @@
+$background: rgb(14, 14, 14);
+$text-background: black;
+$input-text: rgb(202, 136, 38);
+$fixed-text: rgb(167, 117, 43);
+$output-text: rgb(100, 100, 100);
+$border-box: white;
+
+
+@import url('https://fonts.googleapis.com/css?family=Varela&display=swap');
+
+
+.center-content {
+    text-align: center;
+    margin: auto
+}
+
+
+* {
+    margin: 0;
+    font-family: 'Varela', sans-serif;
+    font-size: 100%;
+}
+body {
+    background-color: $background;
+    height: 100vh;
+    width: 100vw;
+}
+
+.user-input-section{
+    width: 50vw;
+    margin: auto;
+    &__text-box{
+        display: inline-block;
+        background-color: $text-background;
+        color: $input-text;
+        border: solid 1px #000;
+        width: 100%;
+        min-height: 10vh;
+        max-height: 30vh;
+        font-size: 1.5rem;
+        margin-top: 10vh;
+    }
+}
+
+.btn-box {
+    border: 2px white solid;
+    border-radius: 20px;
+    min-height: 100px;
+    .btn {
+        padding: 2rem;
+    }
+}
+
+.slide-container {
+    color: $fixed-text;
+}
+
+.container {
+    width: 70vw;
+    height: 20vh;
+    border: 2px black solid;
+    &__text-holder{
+        height: 80%;
+        width: 90%;
+        border: 1px $border-box dotted;
+        background-color: $text-background;
+        &--centered {
+            position: absolute;
+            top: 10%;
+            left: 5%;
+        }
+        &--textbox{
+            font-size: 2rem;
+            font-family: 'Varela', sans-serif;
+            color: $output-text;
+            text-align: center;
+            height: 100%;
+            padding-top: 1vh;
+        }
+    }
+    &--centered {
+    position: absolute;
+    margin: auto;
+    top: 40%;
+    left: 15%
+    }
+}

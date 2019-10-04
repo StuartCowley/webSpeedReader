@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Varela&display=swap");
+.center-content {
+  text-align: center;
+  margin: auto;
+}
+
+* {
+  margin: 0;
+  font-family: 'Varela', sans-serif;
+  font-size: 100%;
+}
+
+body {
+  background-color: #0e0e0e;
+  height: 100vh;
+  width: 100vw;
+}
+
+.user-input-section {
+  width: 50vw;
+  margin: auto;
+}
+
+.user-input-section__text-box {
+  display: inline-block;
+  background-color: black;
+  color: #ca8826;
+  border: solid 1px #000;
+  width: 100%;
+  min-height: 10vh;
+  max-height: 30vh;
+  font-size: 1.5rem;
+  margin-top: 10vh;
+}
+
+.btn-box {
+  border: 2px white solid;
+  border-radius: 20px;
+  min-height: 100px;
+}
+
+.btn-box .btn {
+  padding: 2rem;
+}
+
+.slide-container {
+  color: #a7752b;
+}
+
+.container {
+  width: 70vw;
+  height: 20vh;
+  border: 2px black solid;
+}
+
+.container__text-holder {
+  height: 80%;
+  width: 90%;
+  border: 1px white dotted;
+  background-color: black;
+}
+
+.container__text-holder--centered {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+.container__text-holder--textbox {
+  font-size: 2rem;
+  font-family: 'Varela', sans-serif;
+  color: #646464;
+  text-align: center;
+  height: 100%;
+  padding-top: 1vh;
+}
+
+.container--centered {
+  position: absolute;
+  margin: auto;
+  top: 40%;
+  left: 15%;
+}
+/*# sourceMappingURL=main.css.map */
