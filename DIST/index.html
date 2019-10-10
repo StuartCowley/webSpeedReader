@@ -12,24 +12,18 @@
     <div class="user-input-section">
         <form>
             <textarea placeholder="Enter your text here:" id="text-input" type="text" class="user-input-section__text-box"></textarea>
-            <div class="slide-container center-content">
-                <input type="range" min="60" max="1000" value="60" class="center-content" id="speed-slider" step="20">
+            <div class="slide-container">
+                <input type="range" min="60" max="1000" value="100" id="speed-slider" step="20">
                 <div>Current words per minute: <span id="speed-value"></span></div>
             </div>
-            <div class="btn-box center-content">
+            <div class="btn-box">
                 <button class="btn" id="sub-button" onclick="logWords(document.getElementById('text-input').value)" type="button">START</button>
                 <button class="btn" value="clear" id="clear-button" onclick="clearInput()" type="button">CLEAR</button>
             </div>
         </form>
     </div>
     
-    <div class="container container--centered">    
-        <div class="container__text-holder container__text-holder--centered">
-            <div class="container__text-holder--textbox">
-                <p id="text-output"></p>
-            </div>
-        </div>
-    </div>
+    <div class="output-container" id="text-output"></div>
     <script src="../main.js"></script>
 </body>
 </html>
